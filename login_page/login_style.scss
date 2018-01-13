@@ -1,1 +1,169 @@
-\
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+// color variable declaratiom
+$main-color:#2ecc71;
+$back-color:#ecf0f1;
+$text-color:#2c3e50;
+
+
+@mixin onOutline{
+	&:focus,
+			   &:active{
+				outline:none;
+			}
+}
+html,body{
+	width: 100%;
+	height: 100%;
+	margin:0;
+	padding:0;
+	background-color:$back-color;
+	font-family: 'Open Sans', sans-serif;
+
+
+}
+p{
+	margin:0;
+}
+//resetting the default value
+.wrapper{
+	height:100%;
+	width:100%;
+	top:0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.signup{
+	background-color:white;
+	height:auto;
+	width:30%;
+	transition: height 0.3s;
+	transition-timing-function: ease-out;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  @media screen and (max-width: 760px){
+  	width:100%;
+  }
+	.signup__header{
+		height:55px;
+		width:100%;
+		background-color:$main-color;
+		text-align: center;
+		
+		p{
+			color:white;
+			font-size: 20px;
+			padding-top:10px;
+		}
+		
+		
+	}
+	.signup__option{
+		padding-top:20px;
+		display:flex;
+		justify-content: center;
+
+		.btn{
+			background-color:#ecf0f1;
+			color:#bdc3c7;
+			border:0px;
+			border-radius:2px;
+			border-top-left-radius: 0;
+			border-bottom-left-radius: 0;
+			height:35px;
+			width:25%;
+			cursor:pointer;
+			border:1px solid #ecf0f1;
+			
+			@include onOutline;
+		}
+		
+		.btn:first-child{
+			border-right:0;
+			border-radius:2px;
+			border-top-right-radius: 0;
+			border-bottom-right-radius: 0;
+
+		}
+		.btn--active{
+			background-color:transparent;
+			color:$text-color;
+			
+		}
+	}
+
+
+	.signup__form{
+		//border:1px solid black;
+		margin-left: 8%;
+		margin-right: 5%;
+		padding-top:10px;
+		margin-bottom: 20px;
+		//padding-left: 10px;
+		height:auto;
+		display:none;
+
+		.signup__form-inputgroup{
+			display:flex;
+			flex-direction: column;
+			margin-top:10px;
+          label{
+          	font-size:15px;
+          	color:$text-color;
+          }
+          .message{
+          	margin-top:2px;
+          	color:#7f8c8d;
+          	font-size:12px;
+          }
+			.inputField{
+				width:92%;
+				height:30px;
+				padding-left:10px;
+				margin-top:5px;
+				color:$text-color;
+				&::placeholder{
+					font-size:14px;
+				}
+				@include onOutline;
+				
+			}
+			.input--state-error{
+				border:1px solid red;
+			}
+			
+			.schoolField{
+				width:97%;
+				height:35px;
+				padding-left:5px;
+				border-radius:2px;
+				background-color:#ecf0f1;
+				@include onOutline;
+			}
+			
+
+		}
+		.btnsubmit{
+				background-color:$main-color;
+				border:0;
+				width:98%;
+				font-size:17px;
+				padding-top:12px;
+				padding-bottom:12px;
+				color:#ecf0f1;
+				margin-top:20px;
+				cursor:pointer;
+				@include onOutline;
+				&:hover{
+					color:white;
+				}
+			}
+	}
+	.signup__form--open{
+	display:block;
+}
+
+}
+
+ 

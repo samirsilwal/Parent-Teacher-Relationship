@@ -1,10 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-</head>
-<body>
-	
-</body>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<title>login page</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="login_style.css">
+	</head>
+	<body>
+		<div class="wrapper">
+			<section class="signup">
+				<div class="signup__header">
+					<p>Sign Up</p>
+				</div>
+				<div class="signup__option">
+					<button class="btn btn--active"  data-tab="parent"><i class="fa fa-circle" aria-hidden="true"></i> Parent
+					</button>
+					<button class="btn"  data-tab="teacher">
+						<i class="fa fa-circle-o" aria-hidden="true"></i>
+
+					Teacher</button>
+				</div>
+				<div class="signup__form signup__form--open" id="parent">
+					<div class="signup__form-inputgroup">
+						<label><strong>Full Name</strong></label>
+						<input type="text" class="inputField " placeholder="Enter your name">
+						<label class="message">Please enter name which you registered in school</label>
+					</div>
+					<div class="signup__form-inputgroup">
+						<label><strong>Email Address</strong></label>
+						<input type="email" class="inputField"  placeholder="Enter your email address">
+						<label class="message">Please enter email which you registered in school</label>
+					</div>
+					<div class="signup__form-inputgroup">
+						<label><strong>Contact Number</strong></label>
+						<input type="text" class="inputField"  placeholder="Enter your contact Number">
+						<label class="message">Please enter contact number which you registered in school</label>
+					</div>
+					<div class="signup__form-inputgroup">
+						<select id="school" class="schoolField" name="school">
+							<option selected>Select School</option>
+							<option value="au">123</option>
+							<option value="ca">456</option>
+							<option value="usa">789</option>
+						</select>
+						<label class="message">Please enter Select school where your kids are registered</label>
+					</div>
+					<button class="btnsubmit">SignUp</button>
+				</div>
+
+				<div class="signup__form " id="teacher">
+					<div class="signup__form-inputgroup">
+						<label><strong>Full Name</strong></label>
+						<input type="text" class="inputField " placeholder="Enter your name">
+						<label class="message">Please enter name which you registered in school</label>
+					</div>
+					<div class="signup__form-inputgroup">
+						<label><strong>Email Address</strong></label>
+						<input type="email" class="inputField"  placeholder="Enter your email address">
+						<label class="message">Please enter email which you registered in school</label>
+					</div>
+					<div class="signup__form-inputgroup">
+						<label><strong>Contact Number</strong></label>
+						<input type="text" class="inputField"  placeholder="Enter your contact Number">
+						<label class="message">Please enter contact number which you registered in school</label>
+					</div>
+					<div class="signup__form-inputgroup">
+						<label><strong>Class Teacher</strong></label>
+						<input type="text" class="inputField"  placeholder="Enter your contact Number">
+						<label class="message">Please enter contact number which you registered in school</label>
+					</div>
+					<div class="signup__form-inputgroup">
+						<select id="school" class="schoolField" name="school">
+							<option selected>Select School</option>
+							<option value="au">123</option>
+							<option value="ca">456</option>
+							<option value="usa">789</option>
+						</select>
+						<label class="message">Please enter Select school where your kids are registered</label>
+					</div>
+					<button class="btnsubmit">SignUp</button>
+				</div>
+			</section>
+		</div>
+		<!-- end of wrapper -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+		<script type="text/javascript" src="login_script.js"></script>
+	</body>
 </html>

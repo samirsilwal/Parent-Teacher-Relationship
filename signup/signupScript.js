@@ -21,7 +21,6 @@ var len=inputField.length;
 for(var i=0;i<len-1;i++){
 if($(inputField[i]).val()==""){
 $(inputField[i]).addClass("input--state-error");
-console.log("the username is black");
 }
 }
 if($(inputField[len-1]).val()==0){

@@ -82,7 +82,8 @@ p {
         font-size: 12px; }
       .signup .signup__form .signup__form-inputgroup .inputField {
         width: 92%;
-        height: 30px;
+        height: 32px;
+        border: 1px solid #2c3e50;
         padding-left: 10px;
         margin-top: 5px;
         color: #2c3e50; }
@@ -91,7 +92,8 @@ p {
         .signup .signup__form .signup__form-inputgroup .inputField:focus, .signup .signup__form .signup__form-inputgroup .inputField:active {
           outline: none; }
       .signup .signup__form .signup__form-inputgroup .input--state-error {
-        border: 1px solid red; }
+        border: 0;
+        border: 1px solid #e74c3c; }
       .signup .signup__form .signup__form-inputgroup .schoolField {
         width: 97%;
         height: 35px;

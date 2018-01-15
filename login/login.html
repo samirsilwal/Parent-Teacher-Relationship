@@ -3,18 +3,36 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Document</title>
+	<title>Login</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="loginStyle.css">
 </head>
 <body>
 	<div class="wrapper">
-		
-		<section class="login">
-			<div class="login__header"></div>
+		<header></header>
+		<section>
+			<div class="loginForm">
+				<div class="loginForm__header">
+					<i class="fa fa-user-circle-o loginForm__header-icon" aria-hidden="true"></i>
+					<p class="loginForm__header-title">Login</p>
+				</div>
+				<form class="loginForm__body">
+					<input type="text" class="loginForm__body-inputField" placeholder="Email">
+					<input type="Password" class="loginForm__body-inputField" placeholder="Password">
+					<label class="loginForm__body-forgetpwd">forget password</label>
+				</form>
+
+				<div class="loginForm__footer">
+					<button class="loginForm__footer-submitButton">Log In</button>
+					<p class="loginForm__footer-account">Don't have an account?</p>
+				</div>
+			</div>
 			
 		</section>
+		
 	</div>
-	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="loginScript.js"></script>
+
 </body>
 </html>

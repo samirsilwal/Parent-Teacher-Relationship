@@ -24,16 +24,10 @@ html,body{
 .wrapper{
 	width:100%;
 	height:100%;
-	background-color: #ecf0f1;
-
-	//display: flex;
-	//justify-content: center;
-	//align-items: center;
-		
+	background-color: #ecf0f1;	
    header{
    	height:180px;
    	background-color:$main-color;
-
    }
    section{
    display:flex;
@@ -43,16 +37,15 @@ html,body{
    	.loginForm{
    	position: absolute;
    	top:100px;
-   	height:480px;
+   	height:490px;
    	width:33%;
    	background-color:white;
    	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
    	border-radius: 1px;
+   
    	 &__header{
-   	 	//border:1px solid black;
-   	 	margin-left: 20px;
-   	 	margin-right: 20px;
-   	 	margin-top: 40px;
+   	 //	border:1px solid black;
+   	     padding-top:10%;
    	 	display:flex;
    	 	flex-direction: column;
    	 	justify-content:center;
@@ -70,26 +63,28 @@ html,body{
    	 		letter-spacing: 2px;
    	 	}
    	 }
+   	 &__pwdreset{
+
+         color:#7f8c8d;
+         padding-left:12%;
+         font-size:14px;
+         cursor:pointer;
+         text-decoration: underline;
+         &:hover{
+         	color:#323838;
+         }
+   	 }
    	 &__body{
-   	 //	border:1px solid black;
+   	 //border:1px solid black;
    	 display:flex;
    	 flex-direction: column;
    	 width:100%;
-   	 margin-top:12px;
+   	 padding-top:5%;
+   	 padding-bottom:3%;
   
    	 justify-content:center;
    	 align-items:center;
-     &-forgetpwd{
-     	position:relative;
-     	top:10px;
-     	left:-115px;
-     	font-size:14px;	
-     	color:#7f8c8d;
-     	cursor:pointer;
-     	&:hover{
-     		color:#424849;
-     	}
-     }
+     
    	 &-inputField{
    	 	width:75%;
    	 	height:35px;
@@ -130,15 +125,18 @@ html,body{
       
    	 }//end of loginForm_inputField
 
+
+
+
    	 }//end of loginform__body
 
    	 &__footer{
-   	 	margin-top:30px;
+   	 	padding-top:3%;
        display:flex;
        flex-direction:column;
        //justify-content:center;
        align-items:center;
-      // border:1px solid black;
+       //border:1px solid black;
       
            &-submitButton{
           border:1px solid black;
@@ -158,6 +156,33 @@ html,body{
            
            }
    	 }//end of loginFOrm__footer
+//mobile responsible code
+	@media screen and (max-width: 760px){
+   		top:0;
+   		width:100%;
+   		height:auto;
+
+   		&__header{
+           margin-top:20%;
+           &-icon{
+           	font-size:125px;
+           }
+   		}
+   		&__body{
+   			padding-top:40px;
+   			&-inputField{
+   				width:80%;
+   				font-size:20px;
+   				margin-top:30px;
+   			}
+   		}
+   		&__footer{
+   			padding-top:50px;
+
+   		}
+   	}
+
+
    	}//loginFOrm
 
   

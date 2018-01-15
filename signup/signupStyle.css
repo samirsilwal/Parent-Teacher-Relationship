@@ -22,7 +22,7 @@ p {
   background-color: white;
   height: auto;
   width: 30%;
-  transition: height 0.3s;
+  transition: height 0.4s;
   transition-timing-function: ease-out;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
   @media screen and (max-width: 760px) {

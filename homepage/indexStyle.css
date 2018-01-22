@@ -7,7 +7,7 @@ html, body {
   width: 100%;
   padding: 0;
   margin: 0;
-  background-color: #F3F6F7; }
+  background-color: #303F9F; }
 
 .wrapper {
   height: 100%;
@@ -37,6 +37,9 @@ html, body {
       right: 200px;
       list-style-type: none;
       padding-bottom: 5px; }
+      @media screen and (max-width: 760px) {
+        .wrapper__header-links {
+          display: none; } }
       .wrapper__header-links__list {
         padding-bottom: 8px;
         margin-right: 40px;
@@ -74,14 +77,17 @@ html, body {
     flex-direction: column;
     align-items: center; }
     .wrapper__body-title {
-      font-size: 45px;
+      font-size: 40px;
       text-transform: uppercase;
-      color: #7f8c8d;
+      color: white;
       padding-top: 90px;
       letter-spacing: 3px; }
+      .wrapper__body-title span {
+        color: #f1c40f;
+        font-weight: bold; }
     .wrapper__body-subTitle {
       padding-top: 5px;
-      color: #95a5a6; }
+      color: #ecf0f1; }
     .wrapper__body-btngroup {
       padding-top: 50px;
       width: 35%;
@@ -90,19 +96,26 @@ html, body {
       .wrapper__body-btngroup__button {
         border: 0;
         height: 42px;
-        width: 45%;
+        width: 180px;
         border-radius: 2px;
         cursor: pointer;
         text-transform: uppercase;
         letter-spacing: 1px; }
         .wrapper__body-btngroup__button--fillbtn {
-          background-color: #303F9F;
+          background-color: #f1c40f;
           color: white; }
         .wrapper__body-btngroup__button--strokebtn {
-          border: 2px solid #bdc3c7;
-          color: #95a5a6;
+          border: 2px solid #f1c40f;
+          color: #f1c40f;
           background-color: transparent; }
           .wrapper__body-btngroup__button--strokebtn:hover {
-            color: #2c3e50; }
+            background-color: #f1c40f;
+            color: #ecf0f1; }
+      @media screen and (max-width: 760px) {
+        .wrapper__body-btngroup {
+          flex-direction: column;
+          align-items: center; }
+          .wrapper__body-btngroup__button {
+            margin-bottom: 20px; } }
 
 /*# sourceMappingURL=indexStyle.css.map */

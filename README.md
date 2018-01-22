@@ -4,5 +4,5 @@ Quote break.
 
 Establishing effective Parent-Teacher relationship is not easy cause it like collaboration project where equal involvement is required from both side such as Teacher need to inform parent about behavior in school,performance of their kids,upcoming events,daily assignment,little brief about what he/she learnt in school whereas parent need to give feedback such their kids hobby,social life.behavior  in home.
 
-From this web application,it make a lot easier for both parent and teacher to have effective communication.
+From this web application,it make a lot easier for both parent and teacher to have effective communication.12121
 

@@ -22,19 +22,27 @@
 					Teacher</button>
 				</div>
 				<div class="signup__form signup__form--open" id="parent">
-					<div class="signup__form-inputgroup">
-						<label><strong>Full Name</strong></label>
-						<input type="text" class="inputField " placeholder="Enter your name">
-						<label class="message">Please enter name which you registered in school</label>
+					<div class="signup__form-inputgroup" id="firstLastName">
+						
+						<input type="text" class="inputField " placeholder="First Name">
+						<input type="text" class="inputField " placeholder="Last Name">
+						
 					</div>
+					<label class="message--fullname">Please enter email which you registered in school</label>
 					<div class="signup__form-inputgroup">
 						<label><strong>Email Address</strong></label>
 						<input type="email" class="inputField"  placeholder="Enter your email address">
 						<label class="message">Please enter email which you registered in school</label>
 					</div>
+
+					<div class="signup__form-inputgroup">
+						<label><strong>Password</strong></label>
+						<input type="Password" class="inputField passwordField"  placeholder="Enter password">
+						<label class="message">Atleast 6 character with number</label>
+					</div>
 					<div class="signup__form-inputgroup">
 						<label><strong>Contact Number</strong></label>
-						<input type="text" class="inputField"  placeholder="Enter your contact Number">
+						<input type="number" class="inputField"  placeholder="Enter your contact Number">
 						<label class="message">Please enter contact number which you registered in school</label>
 					</div>
 					<div class="signup__form-inputgroup">
@@ -50,26 +58,30 @@
 				</div>
 
 				<div class="signup__form " id="teacher">
-					<div class="signup__form-inputgroup">
-						<label><strong>Full Name</strong></label>
-						<input type="text" class="inputField " placeholder="Enter your name">
-						<label class="message">Please enter name which you registered in school</label>
+					<div class="signup__form-inputgroup" id="firstLastName">
+						
+						<input type="text" class="inputField " placeholder="First Name">
+						<input type="text" class="inputField " placeholder="Last Name">
+						
 					</div>
+
+					<label class="message--fullname">Please enter email which you registered in school</label>
 					<div class="signup__form-inputgroup">
 						<label><strong>Email Address</strong></label>
 						<input type="email" class="inputField"  placeholder="Enter your email address">
 						<label class="message">Please enter email which you registered in school</label>
 					</div>
 					<div class="signup__form-inputgroup">
-						<label><strong>Contact Number</strong></label>
-						<input type="text" class="inputField"  placeholder="Enter your contact Number">
-						<label class="message">Please enter contact number which you registered in school</label>
+						<label><strong>Password</strong></label>
+						<input type="Password" class="inputField passwordField"  placeholder="Enter password">
+						<label class="message">Atleast 5 character with number</label>
 					</div>
 					<div class="signup__form-inputgroup">
-						<label><strong>Class Teacher</strong></label>
-						<input type="text" class="inputField"  placeholder="Enter your contact Number">
+						<label><strong>Contact Number</strong></label>
+						<input type="number" class="inputField"  placeholder="Enter your contact Number">
 						<label class="message">Please enter contact number which you registered in school</label>
 					</div>
+					
 					<div class="signup__form-inputgroup">
 						<select id="school" class="inputField schoolField" name="school">
 							<option value="0" selected>Select School</option>

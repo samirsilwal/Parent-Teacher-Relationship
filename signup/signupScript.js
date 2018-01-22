@@ -31,6 +31,29 @@ $(inputField[len-1]).addClass('input--state-error');
 $('.inputField').click(function(){
 $(this).removeClass('input--state-error');
 });
+
+$('.passwordField').focusin(function(){
+	console.log("focuusin password");
+	$(this).keydown(function(){
+		console.log($(this).val());
+		if(checkPasswordStrength($(this).val())){
+		$(this).removeClass("input--state-error");
+	      }else{
+	      	$(this).addClass("input--state-error");
+	      }
+		
+	});
+});
+
+function checkPasswordStrength(pwd){
+	var reg=(/^(?=.*\d)(?=.*[a-z])[0-9a-zA-Z]{6,}$/);
+	if(!reg.test(pwd)){
+		return false;
+	}else {
+		return true;
+	}
+
+}
 //end of front end form validation
 
 });

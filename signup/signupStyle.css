@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
 html, body {
   width: 100%;
   height: 100%;
   margin: 0;
   padding: 0;
   background-color: #ecf0f1;
-  font-family: 'Open Sans', sans-serif; }
+  font-family: 'Roboto', sans-serif; }
 
 p {
   margin: 0; }
@@ -63,14 +63,24 @@ p {
       border-bottom-right-radius: 0; }
     .signup .signup__option .btn--active {
       background-color: transparent;
-      color: #2c3e50; }
+      color: #303F9F;
+      border: 1px solid #303F9F !important; }
+  .signup #firstLastName {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    .signup #firstLastName .inputField {
+      width: 45%; }
   .signup .signup__form {
-    margin-left: 8%;
+    margin-left: 5%;
     margin-right: 5%;
     padding-top: 10px;
     margin-bottom: 20px;
     height: auto;
     display: none; }
+    .signup .signup__form .message--fullname {
+      color: #7f8c8d;
+      font-size: 12px; }
     .signup .signup__form .signup__form-inputgroup {
       display: flex;
       flex-direction: column;
@@ -83,7 +93,7 @@ p {
         color: #7f8c8d;
         font-size: 12px; }
       .signup .signup__form .signup__form-inputgroup .inputField {
-        width: 92%;
+        width: 97%;
         height: 32px;
         border: 1px solid #95a5a6;
         padding-left: 10px;
@@ -97,9 +107,8 @@ p {
         border: 0;
         border: 1px solid #e74c3c; }
       .signup .signup__form .signup__form-inputgroup .schoolField {
-        width: 97%;
+        width: 100%;
         height: 35px;
-        padding-left: 5px;
         border-radius: 2px;
         background-color: #ecf0f1; }
         .signup .signup__form .signup__form-inputgroup .schoolField:focus, .signup .signup__form .signup__form-inputgroup .schoolField:active {
@@ -107,7 +116,7 @@ p {
     .signup .signup__form .btnsubmit {
       background-color: #303F9F;
       border: 0;
-      width: 98%;
+      width: 100%;
       font-size: 17px;
       padding-top: 12px;
       padding-bottom: 12px;
